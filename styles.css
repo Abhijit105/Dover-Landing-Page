@@ -1,4 +1,5 @@
-// rgb(59, 163, 132)
+/* rgb(59, 163, 132) */
+/* #002419 */
 
 * {
   margin: 0;
@@ -12,14 +13,30 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   color: #333;
+}
+
+.primary-heading {
+  font-size: 6rem;
+  letter-spacing: -1px;
+  color: #002419;
+  line-height: -0.9;
+  font-weight: 800;
 }
 
 .navigation-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 0.6px 1rem #ebebeb;
+  padding: 2.4rem;
+  margin-bottom: 12rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 3.2rem;
 }
 
 .navigation-main-list {
@@ -27,11 +44,40 @@ body {
   gap: 2rem;
   align-items: center;
   list-style-type: none;
+  font-size: 1.6rem;
 }
 
 .navlink:link,
 .navlink:visited {
   text-decoration: none;
   color: #333;
-  font-size: 1.8rem;
+}
+
+.btn-login:link,
+.btn-login:visited {
+  background-color: #ebebeb;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  background-color: rgb(59, 163, 132);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.article-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130rem;
+  margin: 0 auto;
+}
+
+.article-hero-img {
+  display: block;
+  width: 50%;
+  height: auto;
 }
