@@ -1,5 +1,13 @@
-/* rgb(59, 163, 132) */
-/* #002419 */
+/* COLORS 
+
+rgb(59, 163, 132)
+#002419
+rgb(17, 17, 17)
+rgb(102, 102, 102)
+rgb(33, 33, 33)
+
+
+*/
 
 * {
   margin: 0;
@@ -25,6 +33,8 @@ body {
   font-weight: 800;
 }
 
+/* NAVIGATION */
+
 .navigation-main {
   display: flex;
   justify-content: space-between;
@@ -32,6 +42,7 @@ body {
   box-shadow: 0px 0.6px 1rem #ebebeb;
   padding: 2.4rem;
   margin-bottom: 12rem;
+  font-weight: 600;
 }
 
 .logo {
@@ -50,23 +61,35 @@ body {
 .navlink:link,
 .navlink:visited {
   text-decoration: none;
-  color: #333;
+  color: rgb(102, 102, 102);
+}
+
+.navlink-active {
+  color: rgb(17, 17, 17);
 }
 
 .btn-login:link,
 .btn-login:visited {
   background-color: #ebebeb;
-  padding: 1.2rem;
+  padding: 1.1rem 1.6rem;
   border-radius: 1rem;
 }
 
 .btn-cta:link,
 .btn-cta:visited {
   background-color: rgb(59, 163, 132);
-  padding: 1.2rem;
+  padding: 1.1rem 1.6rem;
   border-radius: 1rem;
   color: #ffffff;
+  transition: all 0.4s;
 }
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: rgb(1, 55, 39);
+}
+
+/* HERO ARTICLE */
 
 .article-hero {
   display: flex;
@@ -74,10 +97,64 @@ body {
   align-items: center;
   width: 130rem;
   margin: 0 auto;
+  gap: 10rem;
+  margin-bottom: 20rem;
+}
+
+.article-hero-text-box {
+  width: 43rem;
 }
 
 .article-hero-img {
   display: block;
   width: 50%;
   height: auto;
+}
+
+.article-hero-text-header {
+  margin-bottom: 2.4rem;
+}
+
+.article-hero-description {
+  color: rgb(1, 55, 39);
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+}
+
+.btn-cta-free {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(59, 163, 132);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.btn-talktous {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ebebeb;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+
+/* FEATURED ARTICLE */
+.article-featured {
+  text-align: center;
+}
+
+.article-featured-text {
+  color: #002419;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.article-featured-logo {
+  filter: grayscale(100%);
+  /* opacity: 50%; */
+  height: 8rem;
+  width: auto;
+  margin-right: 3.2rem;
 }
