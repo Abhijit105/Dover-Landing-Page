@@ -33,6 +33,12 @@ body {
   font-weight: 800;
 }
 
+.secondary-heading {
+  color: #002419;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
 /* NAVIGATION */
 
 .navigation-main {
@@ -143,12 +149,14 @@ body {
 /* FEATURED ARTICLE */
 .article-featured {
   text-align: center;
+  margin-bottom: 11rem;
 }
 
-.article-featured-text {
-  color: #002419;
-  font-size: 3.2rem;
-  margin-bottom: 4.8rem;
+.article-featured-logos {
+  display: flex;
+  justify-content: center;
+  /* gap: 3.2rem; */
+  align-items: center;
 }
 
 .article-featured-logo {
@@ -157,4 +165,115 @@ body {
   height: 8rem;
   width: auto;
   margin-right: 3.2rem;
+}
+
+/* WHAT ARTICLE */
+
+.article-what {
+  margin-bottom: 4.8rem;
+}
+
+.article-what-text {
+  text-align: center;
+}
+
+.article-what-description {
+  color: rgb(17, 17, 17);
+  font-size: 1.6rem;
+  padding: 0 30rem;
+  margin-bottom: 3.6rem;
+}
+
+.cards {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.card {
+  border: 1px solid #ebebeb;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card-name {
+  font-size: 1.8rem;
+  color: rgb(1, 55, 39);
+  margin-bottom: 1.6rem;
+}
+
+.free {
+  color: rgb(59, 163, 132);
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.card-description {
+  color: rgb(102, 102, 102);
+  width: 80%;
+  height: 9rem;
+  margin-bottom: 3.2rem;
+}
+
+.card-list-heading {
+  color: rgb(102, 102, 102);
+  margin-bottom: 1rem;
+}
+
+.card-features-list {
+  list-style-type: none;
+  margin-bottom: 4.2rem;
+  width: 78%;
+}
+
+.card-features-list > li {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  color: rgb(1, 55, 39);
+  font-weight: 500;
+}
+
+.list-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  stroke: rgb(59, 163, 132);
+}
+
+.btn-cta-features {
+  background-color: rgb(59, 163, 132);
+  padding: 1.1rem 1.6rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.btn-learnmore-features {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ebebeb;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+/* VIDEO ARTICLE */
+
+.article-video {
+  text-align: center;
+}
+
+.article-video-video {
+  width: 90rem;
+  height: 42rem;
+  border-radius: 1rem;
 }
